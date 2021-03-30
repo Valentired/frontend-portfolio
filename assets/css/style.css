@@ -187,7 +187,7 @@ img {
     left: 0;
 }
 
-/* Active menu */ 
+/* Active menu */
 .active {
     color: var(--text-color);
 }
@@ -277,7 +277,7 @@ img {
 }
 
 .button__light:hover {
-   color: var(--first-color-lighten); 
+   color: var(--first-color-lighten);
 }
 
 /* ABOUT */
@@ -654,3 +654,84 @@ img {
     color: var(--text-color);
 }
 
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+    .home__button {
+        width: initial;
+    }
+
+    .nav__menu {
+        width: var(--nav-width);
+    }
+    .about__container,
+    .skills__container,
+    .services__container,
+    .works__container, 
+    .contact__container,
+    .contact__inputs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about__data{
+        text-align: initial;
+    }
+
+    .about__description {
+        margin-bottom: var(--mb-5);
+    }
+
+    .about__img {
+        width: 220px;
+    }
+
+    .about__information {
+        padding-left: 4rem;
+    }
+
+    .education__time {
+        padding: 0 2rem;
+    }
+
+    .project {
+        background: none;
+    }
+
+    .project__container {
+        background-color: var(--first-color);
+        grid-template-columns: 2fr 1.2fr;
+        padding: 0 2rem;
+        border-radius: .5rem;
+    }
+
+    .project__data {
+        padding: 3rem 0;
+    }
+
+    .project__title, .project__data {
+        text-align: initial;
+    }
+
+    .project__img {
+        width: 230px;
+        align-self: flex-end;
+    }
+
+    .contact__inputs {
+        display: grid;
+        column-gap: 1.5rem;
+    }
+
+    .contact__info {
+        padding-left: 3rem;
+    }
+
+    .footer {
+        background: none;
+    }
+
+    .footer__container {
+        background-color: var(--first-color-darken);
+        padding: 3rem 0;
+        border-radius: .5rem;
+    }
+}
